@@ -40,11 +40,11 @@
 
         default_layer {
             bindings = <
- &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                       &tog 1                                                                     &mo 3    &kp N6  &kp N7    &kp N8     &kp N9    &kp N0  &kp MINUS
-   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T              &kp K_VOLUME_UP                                                                     &none     &kp Y   &kp U     &kp I      &kp O     &kp P   &kp BSLH
-   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G            &kp K_VOLUME_DOWN  &kp LEFT_ALT   &kp LALT                   &kp LGUI  &kp RCTRL      &none  &kp SEMI   &kp H     &kp J      &kp K     &kp L    &kp SQT
- &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                              &kp HOME                  &kp PG_UP                        &kp FSLH   &kp N     &kp M  &kp COMMA   &kp DOT  &kp RSHFT
-     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                             &kp BSPC       &kp DEL  &kp LCTRL                   &kp LGUI  &kp SPACE  &kp ENTER            &kp UP  &kp DOWN   &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL     &kp N1    &kp N2    &kp N3     &kp N4  &kp N5                  &tog 1                                                                           &mo 3    &kp N6  &kp N7    &kp N8     &kp N9    &kp N0  &kp MINUS
+   &kp TAB      &kp Q     &kp W     &kp E      &kp R   &kp T            &kp C_VOL_UP                                                                       &kp GRAVE     &kp Y   &kp U     &kp I      &kp O     &kp P   &kp BSLH
+   &kp ESC      &kp A     &kp S     &kp D      &kp F   &kp G            &kp C_VOL_DN   &kp LEFT_ALT   &kp LALT                   &kp LGUI       &kp RCTRL  &kp TILDE  &kp SEMI   &kp H   &lt 4 J      &kp K     &kp L      &mo 4
+ &kp LSHFT      &kp Z     &kp X     &kp C      &kp V   &kp B                                          &kp HOME                  &kp PG_UP                             &kp FSLH   &kp N     &kp M  &kp COMMA   &kp DOT  &kp RSHFT
+     &mo 2  &kp GRAVE  &kp CAPS  &kp LEFT  &kp RIGHT                        &kp BSPC  &mt LCTRL DEL  &kp LCTRL                   &kp LGUI  &mt LGUI SPACE  &kp ENTER            &kp UP  &kp DOWN   &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
@@ -75,6 +75,16 @@
   &none         &none         &none         &none         &none         &none                  &none   &none   &none                  &bt BT_CLR       &none  &rgb_ug RGB_MEFS_CMD 5   &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none    &macro_ver         &none                                  &none                       &none                                       &none       &none       &none   &none   &none   &none
   &none         &none         &none         &none         &none                                &none   &none   &none                       &none  &bl BL_TOG         &rgb_ug RGB_TOG          &bl BL_INC  &bl BL_DEC   &none   &none   &none
+            >;
+        };
+
+        layer_Layer__4 {
+            bindings = <
+ &trans                 &trans           &trans         &trans             &trans  &trans                   &trans                                                                         &trans       &trans     &trans  &trans            &trans             &trans  &trans
+ &trans              &kp QMARK       &kp DOLLAR  &kp AMPERSAND       &kp ASTERISK  &trans                   &trans                                                                         &trans       &trans     &trans  &trans            &trans             &trans  &trans
+ &trans   &kp LEFT_PARENTHESIS   &kp LEFT_BRACE      &kp EQUAL   &kp SINGLE_QUOTE  &trans                   &trans            &trans  &trans                          &trans     &trans    &trans  &kp PERCENT  &kp COLON  &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+ &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE         &trans  &kp DOUBLE_QUOTES  &trans                                             &trans                          &trans                            &trans   &kp HASH  &trans            &trans             &trans  &trans
+ &trans                 &trans           &trans         &trans             &trans                    &kp LESS_THAN  &kp GREATER_THAN  &trans                  &kp UNDERSCORE  &kp MINUS  &kp PLUS                  &trans  &trans            &trans             &trans  &trans
             >;
         };
 
